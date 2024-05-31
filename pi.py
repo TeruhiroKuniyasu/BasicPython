@@ -3,5 +3,11 @@ text = """
     quantum mechanics. All of thy geometry, Herr Planck, is fairly hard.
 """
 
-# TODO
+words = text.split()
+
+lengths = [len(word.strip(",.")) for word in words]
+
+string = ''.join(map(str, lengths))
+
+print(string)
 
