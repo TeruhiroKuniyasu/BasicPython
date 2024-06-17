@@ -8,7 +8,7 @@ is_prime_b = True
 if a <= 1:
     is_prime_a = False
 else:
-    for i in range(2, int(a)):
+    for i in range(2, int(a**0.5 + 1)):
         if a %i == 0:
             is_prime_a = False
             break
@@ -21,7 +21,7 @@ else:
 if b <= 1:
     is_prime_b = False
 else:
-    for i in range(2, int(b)):
+    for i in range(2, int(b**0.5 + 1)):
         if b %i == 0:
             is_prime_b = False
             break
