@@ -10,4 +10,3 @@ lengths = [len(word.strip(",.")) for word in words]
 string = ''.join(map(str, lengths))
 
 print(string)
-
