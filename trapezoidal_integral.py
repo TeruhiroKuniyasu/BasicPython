@@ -11,5 +11,5 @@ for k in range(1, 100 + 1):
     tmp = (h / 2) * (sin(a + (k - 1) * h) + sin(a + k * h))
     S_current = tmp + S_current
 
-print(S = S_current)
+print(S_current)
     
