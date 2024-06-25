@@ -10,6 +10,7 @@ def integral(a, b, n, f):
     for k in range(1, n + 1):
         tmp = (h / 2) * (f(a + (k - 1) * h) + f(a + k * h))
         S_current = tmp + S_current
+        
     return S_current
 
 def f1(x):

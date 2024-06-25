@@ -3,6 +3,7 @@ def GCD(a, b):
         a, b = b, a % b
     return a
 
+
 def relatively_prime(a, b):
     is_relatively_prime = False
     if GCD(a, b) == 1:

@@ -8,7 +8,7 @@ def prime(n):
             if n %i == 0:
                 return False
         return True
-
+    
 n = int(input("\nnの値を入力: "))
 print(prime(n))
 
