@@ -1,20 +1,34 @@
-from math import sin, pi
+from math import sin, pi, exp
 
 def integral(a, b, n, f):
+    a = 0
+    b = 1
+    n = 100 
     h = (b - a) / n
     S_current = 0
 
-    for k in range(1, n):
+    for k in range(1, n + 1):
         tmp = (h / 2) * (f(a + (k - 1) * h) + f(a + k * h))
         S_current = tmp + S_current
     return S_current
 
-def f(x):
+def f1(x):
     return sin(x)
-#ここで関数を変えることで対応可能
+a = 0
+b = pi / 2
+n = 50
+print("\n(1)積分値：", integral(a, b, n, f = f1))
 
-a = float(input("\naの値を入力: "))
-b = float(input("bの値を入力: "))
-n = int(input("分割数nの値を入力: "))
-print("\n積分値：", integral(a, b, n, f))
-    
+def f2(x):
+    return 4 / (1 + x**2)
+a = 0
+b = 1
+n = 100
+print("\n(2)積分値：", integral(a, b, n, f = f2))
+
+def f3(x):
+    return pi**0.5 * exp(-x**2)
+a = -100
+b = -100
+n = 1000
+print("\n(3)積分値：", integral(a, b, n, f = f3))
