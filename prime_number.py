@@ -1,6 +1,4 @@
 def prime(n):
-    is_prime = True
-
     if n <= 1:
         return False
     else:
@@ -11,5 +9,3 @@ def prime(n):
     
 n = int(input("\nnの値を入力: "))
 print(prime(n))
-
-

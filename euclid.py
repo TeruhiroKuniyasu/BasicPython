@@ -7,7 +7,10 @@ def GCD(a, b):
 def relatively_prime(a, b):
     is_relatively_prime = False
     if GCD(a, b) == 1:
-        return True
+        is_relatively_prime = True
+        return is_relatively_prime
+    else:
+        return is_relatively_prime
 
 a = int(input("\na の値を入力: "))
 b = int(input("b の値を入力: "))
