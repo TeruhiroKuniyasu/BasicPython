@@ -15,21 +15,12 @@ def integral(a, b, n, f):
 
 def f1(x):
     return sin(x)
-a = 0
-b = pi / 2
-n = 50
-print("\n(1)積分値：", integral(a, b, n, f = f1))
+print("\n(1)積分値：", integral(0, pi/2, 50, f = f1))
 
 def f2(x):
     return 4 / (1 + x**2)
-a = 0
-b = 1
-n = 100
-print("\n(2)積分値：", integral(a, b, n, f = f2))
+print("\n(2)積分値：", integral(0, 1, 100, f = f2))
 
 def f3(x):
     return pi**0.5 * exp(-x**2)
-a = -100
-b = -100
-n = 1000
-print("\n(3)積分値：", integral(a, b, n, f = f3))
+print("\n(3)積分値：", integral(-100, 100, 1000, f = f3))
