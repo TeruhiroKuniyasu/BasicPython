@@ -1,6 +1,6 @@
 from math import sin, pi, exp
 
-def integral(a = 0, b = 1, n = 100, f = None):
+def integral(f, a = 0, b = 1, n = 100):
     h = (b - a) / n
     S_current = 0
 
